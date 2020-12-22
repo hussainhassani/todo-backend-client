@@ -30,6 +30,7 @@ var app = app || {};
 		toggle: function () {
 			this.save({
 				title: this.get('title'),
+				order: this.get('order'),
 				completed: !this.get('completed')
 			},{patch:true});
 		}

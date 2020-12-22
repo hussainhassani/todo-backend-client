@@ -83,6 +83,8 @@ var app = app || {};
 			var value = this.$input.val();
 			var trimmedValue = value.trim();
 
+			var order = this.model.get("order");
+
 			// We don't want to handle blur events from an item that is no
 			// longer being edited. Relying on the CSS class here has the
 			// benefit of us not having to maintain state in the DOM and the
